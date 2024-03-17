@@ -11,11 +11,17 @@ import "react-clock/dist/Clock.css";
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
-
 export default function Home() {
   const [valueDate, onChangeDate] = useState<Value>(new Date());
-  const [valueTime, onChangeTime] = useState("10:00");
- 
+  const [valueTime, onChangeTime] = useState<string | null>("10:00"); // Updated type to string | null
+
+  const handleTimeChange = (newValue: string | null) => {
+    // Ensure null is handled properly
+    if (newValue !== null) {
+      onChangeTime(newValue);
+    }
+  };
+
   return (
     <main className="flex flex-col items-center bg-[#FDF0E6]">
       <nav className="flex flex-col justify-center items-center h-[130px] font-bold font-header text-[30px]">
@@ -59,7 +65,7 @@ export default function Home() {
             </label>
           </div>
           <div>
-            <TimePicker onChange={onChangeTime} value={valueTime} />
+            <TimePicker onChange={handleTimeChange} value={valueTime} />
           </div>
         </div>
         <div className="flex flex-col gap-1">
