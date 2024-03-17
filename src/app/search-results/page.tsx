@@ -35,7 +35,7 @@ const SearchResults = () => {
         </section>
         <section className="flex flex-col lg:flex-row gap-10 bg-white p-10 m-5 lg:text-left">
           <div className="">
-            <img src="/shop1.jpg" alt="shop" className="w-[200px] h-[200px]" />
+            <img src="/shop2.jpg" alt="shop" className="w-[200px] h-[200px]" />
           </div>
           <div className="flex flex-col gap-2 justify-center">
             <div>
@@ -62,7 +62,7 @@ const SearchResults = () => {
         </section>
         <section className="flex flex-col lg:flex-row gap-10 bg-white p-10 m-5 lg:text-left">
           <div className="">
-            <img src="/shop1.jpg" alt="shop" className="w-[200px] h-[200px]" />
+            <img src="/shop3.jpg" alt="shop" className="w-[200px] h-[200px]" />
           </div>
           <div className="flex flex-col gap-2 justify-center">
             <div>
