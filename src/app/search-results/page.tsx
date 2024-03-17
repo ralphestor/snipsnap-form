@@ -12,7 +12,7 @@ const SearchResults = () => {
           </div>
           <div className="flex flex-col gap-2 justify-center">
             <div>
-              <h1 className="text-[24px]">Rebecca's Hair and Spa</h1>
+              <h1 className="text-[24px]">Rebecca&apos;s Hair and Spa</h1>
             </div>
             <div className="text-[16px] font-medium text-gray-600">
               <h4>Location: Matina, Davao City</h4>
@@ -66,7 +66,7 @@ const SearchResults = () => {
           </div>
           <div className="flex flex-col gap-2 justify-center">
             <div>
-              <h1 className="text-[24px]">Marlon’s Creation</h1>
+              <h1 className="text-[24px]">Marlon&apos;s Creation</h1>
             </div>
             <div className="text-[16px] font-medium text-gray-600">
               <h4>Location: Matina, Davao City</h4>
